@@ -4,7 +4,7 @@ import { textTestimonials } from "@/data/text-testimonials";
 import { toLoomEmbedUrl } from "@/lib/loom";
 
 const TRAINING_LOOM_URL_LEFT =
-  "https://www.loom.com/share/e0e01d42b2984882bf5c763ec6b2cdbf";
+  "https://www.loom.com/share/82efc365175a4b23beed7a87ad9687e2";
 const TRAINING_LOOM_URL_RIGHT =
   "https://www.loom.com/embed/b62017a7639543548f22b1b3e5f7392e";
 
