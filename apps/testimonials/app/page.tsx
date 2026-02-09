@@ -1,9 +1,10 @@
 import { Logo } from "@/components/Logo";
 import { videoTestimonials } from "@/data/video-testimonials";
 import { textTestimonials } from "@/data/text-testimonials";
+import { toLoomEmbedUrl } from "@/lib/loom";
 
 const TRAINING_LOOM_URL_LEFT =
-  "https://www.loom.com/embed/82efc365175a4b23beed7a87ad9687e2";
+  "https://www.loom.com/share/e0e01d42b2984882bf5c763ec6b2cdbf";
 const TRAINING_LOOM_URL_RIGHT =
   "https://www.loom.com/embed/b62017a7639543548f22b1b3e5f7392e";
 
@@ -63,7 +64,7 @@ export default function Home() {
                 {/* Video container */}
                 <div className="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.1)] md:shadow-[0_20px_60px_rgba(0,0,0,0.15)] border border-[#E2E8F0]">
                   <iframe
-                    src={TRAINING_LOOM_URL_LEFT}
+                    src={toLoomEmbedUrl(TRAINING_LOOM_URL_LEFT)}
                     title="WATCH THIS FIRST - Training Video"
                     width="100%"
                     height="100%"
@@ -79,7 +80,7 @@ export default function Home() {
               <div className="relative">
                 <div className="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.1)] md:shadow-[0_20px_60px_rgba(0,0,0,0.15)] border border-[#E2E8F0]">
                   <iframe
-                    src={TRAINING_LOOM_URL_RIGHT}
+                    src={toLoomEmbedUrl(TRAINING_LOOM_URL_RIGHT)}
                     title="Training Video 2"
                     width="100%"
                     height="100%"
@@ -127,7 +128,7 @@ export default function Home() {
                   <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md mb-3 md:mb-4">
                     <iframe
                       className="w-full h-full"
-                      src={testimonial.url}
+                      src={toLoomEmbedUrl(testimonial.url)}
                       title={testimonial.title}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
