@@ -1,3 +1,5 @@
+import { toLoomEmbedUrl } from "@/lib/loom";
+
 type VideoFrameProps = {
   title: string;
   src: string;
@@ -12,13 +14,7 @@ export function VideoFrame({
   className = "",
 }: VideoFrameProps) {
   // Convert Loom share URLs to embed URLs if needed
-  let embedUrl = src;
-  if (src.includes("loom.com/share/")) {
-    embedUrl = src.replace(
-      /https:\/\/www\.loom\.com\/share\/([a-zA-Z0-9]+)/,
-      "https://www.loom.com/embed/$1"
-    );
-  }
+  const embedUrl = toLoomEmbedUrl(src);
 
   return (
     <div
