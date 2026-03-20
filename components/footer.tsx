@@ -36,7 +36,7 @@ export function Footer() {
             href="https://docs.google.com/document/d/1-n-lWvxPboEynrJeECea9pnwaxq94FLfz2YEIOFCe4o/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#2563EB] hover:underline transition-colors"
+            className="inline-flex items-center justify-center rounded-lg border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#1A202C] shadow-sm transition-colors hover:bg-[#F8FAFC] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2"
           >
             Privacy Policy
           </a>
@@ -44,7 +44,7 @@ export function Footer() {
             href="https://docs.google.com/document/d/1-n-lWvxPboEynrJeECea9pnwaxq94FLfz2YEIOFCe4o/edit?tab=t.jyh6z0kc5c8i#heading=h.k91yj8jrwdw"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#2563EB] hover:underline transition-colors"
+            className="inline-flex items-center justify-center rounded-lg border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#1A202C] shadow-sm transition-colors hover:bg-[#F8FAFC] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2"
           >
             Terms of Service
           </a>
