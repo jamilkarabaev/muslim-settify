@@ -38,7 +38,15 @@ export function Footer() {
             rel="noopener noreferrer"
             className="text-[#2563EB] hover:underline transition-colors"
           >
-            TOCs &amp; Privacy Policy
+            Privacy Policy
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1-n-lWvxPboEynrJeECea9pnwaxq94FLfz2YEIOFCe4o/edit?tab=t.jyh6z0kc5c8i#heading=h.k91yj8jrwdw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#2563EB] hover:underline transition-colors"
+          >
+            Terms of Service
           </a>
         </nav>
 
