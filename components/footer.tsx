@@ -32,6 +32,14 @@ export function Footer() {
           >
             YouTube
           </a>
+          <a
+            href="https://docs.google.com/document/d/1-n-lWvxPboEynrJeECea9pnwaxq94FLfz2YEIOFCe4o/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#2563EB] hover:underline transition-colors"
+          >
+            TOCs &amp; Privacy Policy
+          </a>
         </nav>
 
         <p className="text-xs text-[#94A3B8]">
