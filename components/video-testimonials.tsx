@@ -19,7 +19,7 @@ export const LOOM_THUMBNAILS: Record<string, string> = {
 
 export const YOUTUBE_VIDEO_IDS: string[] = [
   "tE-AMxW_p7I",
-  "OT-JjZCzfq8",
+  "IyNpQAUubUA",
   "FAbzaf_OO28",
   "KSwLMwW7S0E",
   "0yU5bezEcxc",
@@ -85,7 +85,7 @@ const videoTestimonials: VideoTestimonial[] = [
     headline: "Melih's Story",
     subheading: "",
     videoType: "youtube" as const,
-    videoId: "OT-JjZCzfq8",
+    videoId: "IyNpQAUubUA",
     timeline: [
       "May → Sold belongings to get into paid community",
       "May 10 → Joined our paid community",
