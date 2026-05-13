@@ -4,11 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { AnimatedButton } from "@/components/ui/animated-button";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,9 +21,10 @@ export function Navbar() {
   }, []);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("#")) {
+    // Smooth-scroll only when the target section is already on this page.
+    if (pathname === "/" && href.startsWith("/#")) {
       e.preventDefault();
-      const element = document.querySelector(href);
+      const element = document.querySelector(href.slice(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -67,29 +70,29 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center justify-center space-x-6 xl:space-x-8">
             <Link
-              href="#combined-overview"
-              onClick={(e) => handleLinkClick(e, "#combined-overview")}
+              href="/#combined-overview"
+              onClick={(e) => handleLinkClick(e, "/#combined-overview")}
               className="text-sm xl:text-base font-medium text-[#718096] hover:text-[#0066FF] transition-colors duration-200 whitespace-nowrap"
             >
               Program
             </Link>
             <Link
-              href="#video-testimonials"
-              onClick={(e) => handleLinkClick(e, "#video-testimonials")}
+              href="/#video-testimonials"
+              onClick={(e) => handleLinkClick(e, "/#video-testimonials")}
               className="text-sm xl:text-base font-medium text-[#718096] hover:text-[#0066FF] transition-colors duration-200 whitespace-nowrap"
             >
               Success Stories
             </Link>
             <Link
-              href="#faq"
-              onClick={(e) => handleLinkClick(e, "#faq")}
+              href="/#faq"
+              onClick={(e) => handleLinkClick(e, "/#faq")}
               className="text-sm xl:text-base font-medium text-[#718096] hover:text-[#0066FF] transition-colors duration-200 whitespace-nowrap"
             >
               FAQ
             </Link>
             <Link
-              href="#more-success"
-              onClick={(e) => handleLinkClick(e, "#more-success")}
+              href="/more-success"
+              onClick={(e) => handleLinkClick(e, "/more-success")}
               className="text-sm xl:text-base font-medium text-[#718096] hover:text-[#0066FF] transition-colors duration-200 whitespace-nowrap"
             >
               More Success
@@ -140,29 +143,29 @@ export function Navbar() {
           {/* Mobile Links */}
           <div className="flex flex-col space-y-6">
             <Link
-              href="#combined-overview"
-              onClick={(e) => handleLinkClick(e, "#combined-overview")}
+              href="/#combined-overview"
+              onClick={(e) => handleLinkClick(e, "/#combined-overview")}
               className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
             >
               Program
             </Link>
             <Link
-              href="#video-testimonials"
-              onClick={(e) => handleLinkClick(e, "#video-testimonials")}
+              href="/#video-testimonials"
+              onClick={(e) => handleLinkClick(e, "/#video-testimonials")}
               className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
             >
               Success Stories
             </Link>
             <Link
-              href="#faq"
-              onClick={(e) => handleLinkClick(e, "#faq")}
+              href="/#faq"
+              onClick={(e) => handleLinkClick(e, "/#faq")}
               className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
             >
               FAQ
             </Link>
             <Link
-              href="#more-success"
-              onClick={(e) => handleLinkClick(e, "#more-success")}
+              href="/more-success"
+              onClick={(e) => handleLinkClick(e, "/more-success")}
               className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
             >
               More Success
