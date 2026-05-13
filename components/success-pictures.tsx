@@ -44,16 +44,13 @@ export function SuccessPictures({
             >
               <Image
                 src={picture.src}
-                alt={picture.caption}
+                alt=""
                 width={1200}
                 height={1500}
                 loading="lazy"
                 sizes="(min-width: 768px) 560px, 100vw"
                 className="w-full h-auto block"
               />
-              <figcaption className="px-6 py-5 md:px-7 md:py-6 text-base md:text-lg font-medium text-[#1A202C] leading-relaxed border-t border-[#E2E8F0] bg-[#F7FAFC]">
-                {picture.caption}
-              </figcaption>
             </figure>
           ))}
         </div>

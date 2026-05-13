@@ -17,7 +17,7 @@ export default function MoreSuccessPage() {
       <SuccessPictures
         pictures={successPictures}
         title="More Success"
-        subtitle="Real wins from the Muslim Settify community."
+        subtitle="Student wins from the programme."
       />
       <ApplyCTA />
       <Footer />
