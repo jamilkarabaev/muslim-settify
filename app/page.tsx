@@ -9,6 +9,8 @@ import { Footer } from "@/components/footer";
 import { WorldMapSection } from "@/components/world-map-section";
 import { Case } from "@/components/ui/cases-with-infinite-scroll";
 import { PrefetchBelowFold } from "@/components/prefetch-below-fold";
+import { SuccessPictures } from "@/components/success-pictures";
+import { successPictures } from "@/data/success-pictures";
 
 export default function Home() {
   return (
@@ -22,6 +24,11 @@ export default function Home() {
       <WorldMapSection />
       <SocialProof />
       <FAQ />
+      <SuccessPictures
+        id="more-success"
+        pictures={successPictures}
+        title="More Success"
+      />
       <ApplyCTA />
       <Footer />
       </main>

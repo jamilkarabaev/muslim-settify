@@ -87,6 +87,13 @@ export function Navbar() {
             >
               FAQ
             </Link>
+            <Link
+              href="#more-success"
+              onClick={(e) => handleLinkClick(e, "#more-success")}
+              className="text-sm xl:text-base font-medium text-[#718096] hover:text-[#0066FF] transition-colors duration-200 whitespace-nowrap"
+            >
+              More Success
+            </Link>
           </nav>
 
           {/* Desktop CTA Button */}
@@ -152,6 +159,13 @@ export function Navbar() {
               className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
             >
               FAQ
+            </Link>
+            <Link
+              href="#more-success"
+              onClick={(e) => handleLinkClick(e, "#more-success")}
+              className="text-lg font-medium text-[#1A202C] hover:text-[#0066FF] transition-colors"
+            >
+              More Success
             </Link>
             <div className="pt-4">
               <AnimatedButton
