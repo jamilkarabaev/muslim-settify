@@ -7,6 +7,22 @@ export const HOMEPAGE_PICTURE_LIMIT = 150;
 
 export const successPictures: SuccessPicture[] = [
   {
+    "src": "/wins/photo_650@14-05-2026_05-31-31.jpg",
+    "caption": "This is a placeholder caption"
+  },
+  {
+    "src": "/wins/photo_649@14-05-2026_05-31-31.jpg",
+    "caption": "This is a placeholder caption"
+  },
+  {
+    "src": "/wins/photo_648@14-05-2026_05-31-31.jpg",
+    "caption": "This is a placeholder caption"
+  },
+  {
+    "src": "/wins/photo_647@14-05-2026_05-31-31.jpg",
+    "caption": "This is a placeholder caption"
+  },
+  {
     "src": "/wins/photo_646@13-05-2026_10-28-14.jpg",
     "caption": "This is a placeholder caption"
   },
