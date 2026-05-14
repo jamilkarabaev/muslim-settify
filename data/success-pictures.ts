@@ -203,10 +203,6 @@ export const successPictures: SuccessPicture[] = [
     "caption": "This is a placeholder caption"
   },
   {
-    "src": "/wins/photo_328@08-01-2026_22-03-30.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
     "src": "/wins/photo_324@04-01-2026_12-38-21.jpg",
     "caption": "This is a placeholder caption"
   },
