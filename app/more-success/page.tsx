@@ -19,7 +19,6 @@ export default function MoreSuccessPage() {
         pictures={successPictures}
         title="More Success"
         subtitle="Student wins from the programme."
-        numbered
       />
       <section className="px-4 sm:px-6 lg:px-8 pb-12 md:pb-16 bg-white">
         <div className="max-w-6xl mx-auto flex justify-center">
