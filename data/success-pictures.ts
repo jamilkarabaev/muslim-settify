@@ -79,10 +79,6 @@ export const successPictures: SuccessPicture[] = [
     "caption": "This is a placeholder caption"
   },
   {
-    "src": "/wins/photo_507@10-03-2026_20-21-10.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
     "src": "/wins/photo_504@09-03-2026_14-27-37.jpg",
     "caption": "This is a placeholder caption"
   },
@@ -144,10 +140,6 @@ export const successPictures: SuccessPicture[] = [
   },
   {
     "src": "/wins/photo_441@18-02-2026_03-30-40.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_431@12-02-2026_13-55-48.jpg",
     "caption": "This is a placeholder caption"
   },
   {
@@ -227,10 +219,6 @@ export const successPictures: SuccessPicture[] = [
     "caption": "This is a placeholder caption"
   },
   {
-    "src": "/wins/photo_194@19-08-2025_03-14-52.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
     "src": "/wins/photo_193@18-08-2025_20-43-22.jpg",
     "caption": "This is a placeholder caption"
   },
@@ -243,23 +231,7 @@ export const successPictures: SuccessPicture[] = [
     "caption": "This is a placeholder caption"
   },
   {
-    "src": "/wins/photo_153@18-07-2025_14-09-11.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_144@04-07-2025_19-43-13.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
     "src": "/wins/photo_104@29-05-2025_18-18-46.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_100@28-05-2025_15-27-06.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_91@24-05-2025_22-38-50.jpg",
     "caption": "This is a placeholder caption"
   },
   {
@@ -271,27 +243,11 @@ export const successPictures: SuccessPicture[] = [
     "caption": "This is a placeholder caption"
   },
   {
-    "src": "/wins/photo_63@16-05-2025_02-39-16.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_42@06-05-2025_17-01-49.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_43@06-05-2025_17-01-49.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
     "src": "/wins/photo_24@24-04-2025_06-35-24.jpg",
     "caption": "This is a placeholder caption"
   },
   {
     "src": "/wins/photo_16@19-04-2025_06-17-18.jpg",
-    "caption": "This is a placeholder caption"
-  },
-  {
-    "src": "/wins/photo_2@31-03-2025_17-37-28.jpg",
     "caption": "This is a placeholder caption"
   }
 ];

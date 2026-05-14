@@ -8,6 +8,7 @@ type Props = {
   subtitle?: string;
   className?: string;
   id?: string;
+  numbered?: boolean;
 };
 
 export function SuccessPictures({
@@ -16,6 +17,7 @@ export function SuccessPictures({
   subtitle,
   className = "",
   id,
+  numbered = false,
 }: Props) {
   if (pictures.length === 0) {
     return null;
@@ -40,8 +42,13 @@ export function SuccessPictures({
           {pictures.map((picture, i) => (
             <figure
               key={`${picture.src}-${i}`}
-              className="overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-sm mb-6 md:mb-8 break-inside-avoid"
+              className="relative overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-sm mb-6 md:mb-8 break-inside-avoid"
             >
+              {numbered && (
+                <span className="absolute top-3 left-3 z-10 inline-flex items-center justify-center min-w-[2.5rem] h-10 px-3 rounded-full bg-black/80 text-white text-base md:text-lg font-bold tabular-nums shadow-lg ring-2 ring-white">
+                  {i + 1}
+                </span>
+              )}
               <Image
                 src={picture.src}
                 alt=""
